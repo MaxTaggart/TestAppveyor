@@ -18,6 +18,6 @@ platform:
 
 
 build_script:
-    - ps: Write-Host "A: $env:A"
-    - ps: Write-Host "B: $env:B"
+    - 'powershell Write-Host "A: $env:A"'
+    - 'powershell Write-Host "B: $env:B"'
 
