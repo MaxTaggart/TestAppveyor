@@ -1,0 +1,23 @@
+
+environment:
+    matrix:
+        - A: First
+          B: First
+
+        - A: Second
+          B: Second
+
+        - A: Third
+          B: Third
+
+platform:
+    - x86
+    - x64
+
+
+
+
+build_script:
+    - ps: Write-Host "A: $env:A"
+    - ps: Write-Host "B: $env:B"
+
